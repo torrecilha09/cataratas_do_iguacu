@@ -1,0 +1,149 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleza Natural do Paraná</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 15px;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            min-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main id="conteudo">
+    </main>
+
+    <script>
+        const body = document.body;
+        const header = document.querySelector("header");
+        const nav = document.querySelector("nav");
+        const main = document.getElementById("conteudo");
+
+        // MODIFICAR O CSS
+        body.style.backgroundColor = "#e8f5e9";
+        body.style.fontFamily = "Arial, sans-serif";
+
+        header.style.backgroundColor = "#1b4332";
+        header.style.color = "white";
+        header.style.textAlign = "center";
+
+        nav.style.backgroundColor = "#40916c";
+        nav.style.textAlign = "center";
+
+        main.style.backgroundColor = "#ffffff";
+        main.style.textAlign = "center";
+        main.style.maxWidth = "850px";
+        main.style.margin = "30px auto";
+        main.style.borderRadius = "10px";
+        main.style.boxShadow = "0 4px 10px #00000030";
+
+        // ALTERAR O TÍTULO DO CABEÇALHO
+        document.querySelector("header h1").textContent =
+            "Beleza Natural do Paraná";
+
+        // CRIAR O TÍTULO PRINCIPAL
+        const titulo = document.createElement("h1");
+        titulo.textContent = "Cataratas do Iguaçu";
+        titulo.style.color = "#1b4332";
+        main.appendChild(titulo);
+
+        // CRIAR O PRIMEIRO PARÁGRAFO
+        const paragrafo1 = document.createElement("p");
+        paragrafo1.textContent =
+            "As Cataratas do Iguaçu são uma das maiores belezas naturais do Brasil, localizadas em Foz do Iguaçu, no Paraná.";
+        main.appendChild(paragrafo1);
+
+        // CRIAR A IMAGEM
+        const imagem = document.createElement("img");
+        imagem.src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original";
+        imagem.alt = "Paisagem natural das Cataratas do Iguaçu";
+        imagem.style.width = "90%";
+        imagem.style.maxWidth = "650px";
+        imagem.style.borderRadius = "10px";
+        imagem.style.margin = "15px";
+        main.appendChild(imagem);
+
+        // CRIAR O SEGUNDO PARÁGRAFO
+        const paragrafo2 = document.createElement("p");
+        paragrafo2.textContent =
+            "O local possui diversas quedas d'água cercadas por uma grande área de Mata Atlântica, formando uma paisagem impressionante.";
+        main.appendChild(paragrafo2);
+
+        // CRIAR O TERCEIRO PARÁGRAFO
+        const paragrafo3 = document.createElement("p");
+        paragrafo3.textContent =
+            "As Cataratas fazem parte do Parque Nacional do Iguaçu, sendo um importante destino turístico e uma área de preservação ambiental.";
+        main.appendChild(paragrafo3);
+
+        // CRIAR UMA LISTA
+        const subtitulo = document.createElement("h2");
+        subtitulo.textContent = "Curiosidades";
+        subtitulo.style.color = "#1b4332";
+        main.appendChild(subtitulo);
+
+        const lista = document.createElement("ul");
+        lista.style.display = "inline-block";
+        lista.style.textAlign = "left";
+
+        const item1 = document.createElement("li");
+        item1.textContent = "Ficam localizadas em Foz do Iguaçu.";
+
+        const item2 = document.createElement("li");
+        item2.textContent = "Possuem aproximadamente 275 quedas d'água.";
+
+        const item3 = document.createElement("li");
+        item3.textContent = "São reconhecidas como Patrimônio Mundial Natural.";
+
+        lista.appendChild(item1);
+        lista.appendChild(item2);
+        lista.appendChild(item3);
+
+        main.appendChild(lista);
+
+        // CRIAR O RODAPÉ
+        const footer = document.createElement("footer");
+        footer.textContent = "Belezas naturais do Paraná - 2026";
+        footer.style.backgroundColor = "#1b4332";
+        footer.style.color = "white";
+        footer.style.padding = "20px";
+        footer.style.textAlign = "center";
+
+        body.appendChild(footer);
+
+    </script>
+
+</body>
+</html>
+```
